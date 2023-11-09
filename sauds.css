@@ -271,6 +271,86 @@ li :hover{
     align-items: center;
 }
 
+@media only screen and (max-width: 768px){
+    .DS{
+        width:100%;
+        margin-left: 0%;
+    }
+    #dsname{
+        width:100%;
+    }
+    #dsname #dslogo{
+        width:15%;
+    }
+    #dsname #name{
+        width: 80%;
+    }
+    .menu{
+        width:96%;
+        margin-left: 2%;
+    }
+    #menugap{
+        width: 0%;
+    }
+    #menubar{
+        width: 100%;
+    }
+    #menubar ul{
+        padding: 0%;
+    }
+    #menubar li{
+        display: inline-block;
+        padding: 2%;
+        font-size: 23px;
+    }
+    .cover{
+        height: 315px;
+    }
+    .cover h1{
+        padding: 2%;
+        font-size: 40px;
+    }
+
+    .detailsmain{
+        height: 82px;
+    }
+    .footer{
+        height: 210px;
+    }
+    .footermother{
+        margin: 0%;
+        width: 100%;
+    }
+    .logo{
+        height: 55%;
+        width:17%;
+    }
+    .logo img{
+        margin-left: 0%;
+        padding: 2px;
+    }
+    .address{
+        display: block;
+        height: 250pxpx;
+    }
+    .addressmain{
+        height: 120px;
+        grid-template-columns: repeat(3, 2fr);
+    }
+    .rights{
+        height: 50px;
+        margin-top: 5px;
+        font-size: 28px;
+    }
+    #griddiv{
+        margin: 16px;
+        font-size: 26px;
+    }
+    .top{
+        margin: 0%;
+    }
+}
+
 /* about page CSS starts from here */
 
 .aboutpage{
