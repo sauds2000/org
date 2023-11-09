@@ -115,21 +115,34 @@ li :hover{
 }
 
 
-.cover{
+
+.cover {
+    position: relative; 
     height: 70vh;
     width: 100%;
-    background: url(image/SAU1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cover h1{
-    padding: 4% 20%;
+.cover::before {    
+      content: "";
+      background-image: url(image/SAU1.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: .80;
+}
+.cover h1 {
+    position: relative;
+    color: #ffffff;  
+    text-align: center;
+    padding: 5px 5px 5px 5px;
     font-weight: 600;
-    font-size: 55px;
-    color: #dfdfdf;
-
+    font-size: 75px;
     text-shadow: 4px 4px 0px #000, 
         -4px 0 0px #000,
         7px 4px 0 #fff;
@@ -196,14 +209,14 @@ li :hover{
 
 
 .details{
-    height: 230px;
+    height: 170px;
     width: 100%;
     background-color: #4dedf3fd;
     text-align: center;
 }
 
 .detailsmain{
-    height: 60px;
+    height: 0%;
     width: 90%;
     margin:5%;
     display: flex;
@@ -506,13 +519,16 @@ li :hover{
         transition-duration: 1s;
       }
       .detailsmain{
-        height: 145px;
+        height: 85px;
+      }
+      .detailsdsname{
+        margin-top: 5px;
       }
       .details-link:link, .details-link:visited {
         background-color: #fa3605;
         color: white;
         padding: 5px 10px;
-        margin-top: 45px;
+        margin-top: 15px;
         text-align: center;
         border-radius: 10px;
         text-decoration: none;
