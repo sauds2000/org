@@ -134,7 +134,7 @@ li :hover{
       right: 0px;
       bottom: 0px;
       left: 0px;
-      opacity: .80;
+      opacity: .70;
 }
 .cover h1 {
     position: relative;
@@ -367,7 +367,7 @@ li :hover{
     }
 
     .detailsmain{
-        height: 82px;
+        height: 55px;
     }
     .footer{
         height: 210px;
@@ -469,16 +469,19 @@ li :hover{
 
     }
     .footer{
-        height: 125px;
+        height: 80px;
         
     }
     .footermother{
         margin-left: 0%;
         width: 98%;
+        padding-top: 5px;
     }
     .logo{
-        height: 60% ;
+        height: 70% ;
         width:  20% ;
+        border-radius: 15px;
+        margin-left: 5px;
     }
     .logo img{
         height: 100% ;
@@ -486,15 +489,19 @@ li :hover{
         margin-left: 0%;
     }
     .addressmain{
-        height: 79px;
-        grid-template-columns: repeat(2, 3fr);
+        height: 39px;
+        grid-template-columns: repeat(3, 2fr);
     }
     #griddiv{
         margin: 3px;
-        font-size: 17px;
+        font-size: 13px;
+        font-weight: 200;
     }
     .rights{
-        margin-top: 5px;
+        margin-top: 15px;
+        height: 30%;
+        width: 130%;
+        font-weight: 100;
     }
     .top{
         margin: 0%;
@@ -517,6 +524,9 @@ li :hover{
       .top-link:hover, .top-linkk:active {
         background-color: rgb(94, 90, 90);
         transition-duration: 1s;
+      }
+      .details{
+        
       }
       .detailsmain{
         height: 85px;
