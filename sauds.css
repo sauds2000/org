@@ -432,10 +432,10 @@ li :hover{
     #menubar li{
         display: inline-block;
         padding: 1%;
-        font-size: 16px;
+        font-size: 14px;
     }
     .cover{
-        height: 50vh;
+        height: 225px;
     }
     .cover h1{
         padding: 13px 193px 35px 40px;
@@ -456,24 +456,29 @@ li :hover{
 
     }
     .footer{
-        height: 155px;
+        height: 125px;
         
-    }git 
-        height: 62%;
-        width: 22%;
+    }
+    .footermother{
+        margin-left: 0%;
+        width: 98%;
+    }
+    .logo{
+        height: 60% ;
+        width:  20% ;
     }
     .logo img{
-        height: 90px ;
-        width:90px ;
+        height: 100% ;
+        width:  100% ;
         margin-left: 0%;
     }
     .addressmain{
-        height: 110px;
+        height: 79px;
         grid-template-columns: repeat(2, 3fr);
     }
     #griddiv{
-        margin: 8px;
-        font-size: 18px;
+        margin: 3px;
+        font-size: 17px;
     }
     .rights{
         margin-top: 5px;
@@ -637,3 +642,36 @@ li :hover{
     font-family:  Source Sans\ 3,Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 22px;
 }
+
+@media only screen and (max-width: 480px){
+    .about-title{
+        width: 100%;
+        margin-left: 5%;
+        margin-bottom: 15px;
+        font-size: 44px;
+    }
+    .aboutpagemother{
+        display: block;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .aboutsidebar{
+        width: 100%;
+        height: 265px;
+    }
+    .about-navbar-ul{
+        width: 100%;
+    }
+    .aboutmidbar{
+        width: 92%;
+    }
+    .aboutmidbar-details-text{
+        margin-top: 8%;
+        font-family: Source Sans\ 3,Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;;
+    }
+    .aboutmidbar-details-img{
+        height: auto;
+    }
+}
+
+/*about page css complete here*/
