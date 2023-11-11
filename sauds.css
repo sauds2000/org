@@ -201,7 +201,163 @@ li :hover{
     font-size: 30px;
     text-align: justify;
 }
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+    margin-left: 290px;
+}
 
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('image/moderator.jpg');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('image/president.jpg');
+}
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('image/gs.jpg');
+}
+
+.card__like {
+    width: 18px;
+}
+
+.card__clock {
+    width: 15px;
+  vertical-align: middle;
+    fill: #AD7D52;
+}
+.card__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+.box{
+    width: 70%;
+    height: 200px;
+    background-color: #fa3605;
+    margin-left: 15%;
+    
+    display: flex;
+}
+.box-one{
+    width: 30% ;
+    height: 100%;
+    background-color: #316FF6;
+
+}
+.box-blank{
+    width:5% ;
+    height: 100%;
+    background: #0ff71b;
+}
 .join{
     text-align: center;
     font-size: larger;
@@ -245,16 +401,16 @@ li :hover{
     padding: 1%;
 }
 .details-link:link, .details-link:visited {
-    background-color: #fa3605;
+    background-color: #316FF6;
     color: white;
-    padding: 15px 50px;
+    padding: 1px 25px;
     text-align: center;
     border-radius: 10px;
     text-decoration: none;
     display: inline-block;
     font-stretch: expanded;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 500;
   }
   
@@ -457,6 +613,23 @@ li :hover{
         font-size: 31px;
 
     }
+    .cards{
+        display: block;
+        margin-left: 0px;
+    }
+    .card--1{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .card--2{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .card--3{
+        width: 100%;
+        margin-left: 0px;
+    }
+
     .about{
         width:100%;
         margin: 0%;
@@ -537,7 +710,7 @@ li :hover{
         margin-top: 5px;
       }
       .details-link:link, .details-link:visited {
-        background-color: #fa3605;
+        background-color: #316FF6;
         color: white;
         padding: 5px 10px;
         margin-top: 15px;
@@ -674,7 +847,7 @@ li :hover{
 @media only screen and (max-width: 480px){
     .about-title{
         width: 100%;
-        margin-left: 5%;
+        margin-left: 0%;
         margin-bottom: 15px;
         font-size: 44px;
     }
@@ -703,6 +876,7 @@ li :hover{
 }
 
 /*about page css complete here*/
+
 /* join page css starts from here*/
 .join-mother{
     width: 90%;
@@ -719,7 +893,7 @@ li :hover{
 }
 
 .join-form{
-   padding-left: 5%;
+   padding-left: 2%;
 }
 
 .myForm {
@@ -826,13 +1000,14 @@ li :hover{
 
 @media only screen and (max-width: 480px){
     .join-mother{
-        width: 100%;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(1, 6fr);
-        margin-left: 0px;
-        padding-left: 5px;
-        padding-right: 5px;
+        margin-left: 3%;
     }
+    #joinbold{
+        font-size: 45px;
+    }  
     .myForm {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size: 0.8em;
@@ -846,7 +1021,7 @@ li :hover{
     padding-right: 5px;
 }
 .blank{
-    padding-top: 10%;
+    padding-top:0px;
     padding-right: 10px;
 
 }
@@ -1019,5 +1194,78 @@ text-align: center;
     .game-img img{
         width: 300px;
         height: auto;
+    }
+}
+/*tournament css ends here*/
+/* alumni css starts from here*/
+
+
+.alumni-mother{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+.alumni-head{
+    width:100%;
+    height: 50px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.alumni-grid{
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 3fr);
+    display: grid;
+}
+#alumni{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.alumni-img img{
+    width: 250px;
+    height: 170px;
+    border-radius: 30px;
+    
+}
+.alumni-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: 40px;
+}
+.alumni-text-head{
+    height:10%;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 480px){
+    .alumni-mother{
+        width:100%;
+        padding: 0px;
+        margin:0%;
+
+    }
+    .alumni-head{
+        font-size: 30px;
+     
+    }
+    .alumni-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #alumni{
+        grid-template-columns: repeat(1, 0fr);
+        padding: 10px;
+    }
+    .alumni-img img{
+        width: 300px;
+        height: auto;
+    }
+    .alumni-text{
+        height: 170px;
+        border-bottom: #555 2px solid;
     }
 }
