@@ -123,6 +123,7 @@ li :hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0%;
 }
 
 .cover::before {    
@@ -210,6 +211,15 @@ li :hover{
     max-width: 820px;
     margin-left: 290px;
 }
+.cards-committee{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+    margin-left: 60px;
+}
 
 .card--1 .card__img, .card--1 .card__img--hover {
     background-image: url('image/moderator.jpg');
@@ -285,6 +295,17 @@ top: 0;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
+.cardb{
+    margin-right: 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+      width: 95%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
@@ -607,9 +628,10 @@ border-bottom-right-radius: 12px;
     }
     .cover{
         height: 225px;
+        margin-right: 0%;
     }
     .cover h1{
-        padding: 13px 193px 35px 40px;
+        padding: 21px 141px 32px 0px;
         font-size: 31px;
 
     }
@@ -617,17 +639,23 @@ border-bottom-right-radius: 12px;
         display: block;
         margin-left: 0px;
     }
+    .cards-committee{
+        grid-template-columns: repeat(1, 0fr);
+    }
     .card--1{
         width: 100%;
         margin-left: 0px;
+        margin-right: 0%;
     }
     .card--2{
         width: 100%;
         margin-left: 0px;
+        margin-right: 0%;
     }
     .card--3{
         width: 100%;
         margin-left: 0px;
+        margin-right: 0%;
     }
 
     .about{
@@ -1269,3 +1297,181 @@ text-align: center;
         border-bottom: #555 2px solid;
     }
 }
+
+/* result page body css*/
+.two-card{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    height: 60%;
+}
+.card-grid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    margin-left:5px;
+    margin-right: 5px;
+  }
+  figure:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  figure:hover h1 {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  figure:hover img {
+    transform: scale(1.25);
+  }
+  figure:hover figcaption {
+    bottom: 0;
+  }
+  figure h1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.25s ease;
+    z-index: 999;
+  }
+  figure img {
+    height: 100%;
+    transition: 0.25s;
+  }
+  figure figcaption {
+    position: absolute;
+    bottom: -55%;
+    left: 0;
+    width: 92%;
+    margin: 0;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 1;
+    transition: 0.25s;
+  }
+  figure figcaption h3 {
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  figure figcaption p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  figure figcaption button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 10px 30px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 480px){
+     .two-card{
+        grid-template-columns: repeat(1, 0fr);
+     }
+     .card-grid{
+        height: 120vh;
+     }
+     figure{
+        margin-left: 5px;
+        width: 310px;
+        min-width: 0 px;
+        margin-right: 0%;
+        height: 400px;
+     }
+     figure figcaption{
+        bottom: -55%;
+        padding: 20px;
+        width: 87%;
+
+     }
+  }
+  /* committee starts from here*/
+
+.container-two {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 53px 20px;
+}
+.card-committe {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 70px;
+}
+.card > div {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.card-image {
+  width: 280px;
+  height: 200px;
+}
+.card-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.card-text {
+ 
+  margin-bottom: -50px;
+  height: 75px;
+  width: 240px;
+  background-color: #1d1c20;
+  color: #fff;
+  padding: 20px;
+}
+.card-meal-type {
+  font-style: italic;
+}
+.card-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.card-body {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 480px){
+  .container-two{
+    grid-template-columns: repeat(1, 0fr);
+
+  }
+  .card-committe{
+    width: 230px;
+  }
+ }
