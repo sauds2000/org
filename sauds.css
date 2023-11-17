@@ -1156,7 +1156,10 @@ text-align: center;
         height: auto;
     }
     
-
+   .card-grid{
+    height: 50vh;
+    width: 122%;
+   }
 }
     
 
@@ -1400,7 +1403,8 @@ text-align: center;
         grid-template-columns: repeat(1, 0fr);
      }
      .card-grid{
-        height: 120vh;
+        height: 50vh;
+        width: 122%;
      }
      figure{
         margin-left: 5px;
@@ -1475,3 +1479,4 @@ text-align: center;
     width: 230px;
   }
  }
+/* copy rights page css*/
