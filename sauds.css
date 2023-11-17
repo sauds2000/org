@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
 body{
     margin: 0%;
 }
@@ -906,11 +907,13 @@ border-bottom-right-radius: 12px;
 /*about page css complete here*/
 
 /* join page css starts from here*/
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
 .join-mother{
     width: 90%;
     margin-left:5% ;
     display: grid;
     grid-template-columns: repeat(2, 3fr);
+   
 }
 .join-gereetings{
     width: 100px;
