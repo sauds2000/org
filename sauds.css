@@ -1405,6 +1405,7 @@ text-align: center;
      .card-grid{
         height: 50vh;
         width: 122%;
+        margin-bottom: 30px;
      }
      figure{
         margin-left: 5px;
