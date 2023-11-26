@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sauds.css">
 </head>
-    <body>
+    <body >
         <section class="topbar">
             <div id="topgap">
 
@@ -54,11 +54,11 @@
         </section>
         <br>
         <br>
-        <div class="join-mother">
+        <div class="join-mother" >
             <div class="join-greetings">
                 <div class="join-greetings-head"><b id="joinbold">JOIN SAUDS</b></div>
-                <div class="blank-bold"><h3>শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ডিবেটিং সোসাইটি-তে যুক্ত হবার ইচ্ছা পোষণের জন্য আপনাকে ধন্যবাদ।</h3></div>
-                <div class="blank-normal"><p> শেকৃবি ডিবেটিং সোসাইটি-তে সদস্য পদ আবেদন জন্য নিচের ফর্মটি পূর্ণ করুন । </p></div>
+                <div class="blank-bold"><h3 style="font-family: tiro bangla;">শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ডিবেটিং সোসাইটি-তে যুক্ত হবার ইচ্ছা পোষণের জন্য আপনাকে ধন্যবাদ।</h3></div>
+                <div class="blank-normal"><p style="font-family: tiro bangla;"> শেকৃবি ডিবেটিং সোসাইটি-তে সদস্য পদ আবেদন জন্য নিচের ফর্মটি পূর্ণ করুন । </p></div>
             </div>
             <div class="blank">
                 
@@ -66,7 +66,7 @@
             </div>
             <div class="join-form">
                 <div style="text-align: center;"><h2>Joining Form</h2></div>
-                <form class="myForm" method="post" enctype="application/x-www-form-urlencoded" action="https://script.google.com/macros/s/AKfycbzehn0QXaiyp7IZgn0wxes2lcFU32OQensKn-wPU8b7cun6IcJHY9ZR2BKzxUjTnRxq/exec" name="contact-form">
+                <form class="myForm" method="post" enctype="application/x-www-form-urlencoded" name="contact-form">
 
                     <p>
                         <label>Name
@@ -104,44 +104,15 @@
                         </label>
                     </p>
                     
-                    <fieldset>
-                        <legend>Do you ever attend in any debate before?</legend>
-                        <p> 
-                            <label class="choice"> 
-                                <input type="radio" name="taxi" required value="car"> Yes. I am
-                             </label>
-                        </p>
-                        <p>
-                            <label class="choice"> 
-                                <input type="radio" name="taxi" required value="van"> No, I ain't 
-                            </label>
-                        </p>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <legend>"Life is not a bed of rose"-indicates-</legend>
-                        <p>
-                            <label class="choice"> 
-                                <input type="radio" name="extras" value="baby"> Life is full of hardship 
-                            </label>
-                        </p>
-                        <p>
-                            <label class="choice"> 
-                                <input type="radio" name="extras" value="wheelchair"> If you doesn't hardwork, you will fail 
-                            </label>
-                        </p>
-                        <p>
-                            <label class="choice"> 
-                                <input type="radio" name="extras" value="tip"> By overcoming the hardship, one can succeed 
-                            </label>
-                        </p>
-                    </fieldset>
-                    
-                    <p>
-                    <label>Date of Birsth
-                    <input type="datetime-local" name="DOB" required>
+                    <label>Previous Debate Experience
+                        <input type="text" name="Experience" required list="destination2">
                     </label>
-                    </p>
+                    
+                        <datalist id="destination2">
+                            <option value=" Yes, I have">
+                            <option value=" No, I haven't">
+    
+                            </datalist>
                         
                     <p>
                     <label>Residential  Hall
@@ -177,7 +148,17 @@
                     <p><input type="submit" value="Submit" class="button"></p>
                     
                     </form>
-                    
+                    <script type="text/javascript">
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbywOqQy9RMObgGzc-Xo98aloaOhqlcOtKbMhM6Do3SB0dbCg-2KxeKCdn_E4CzJCsZE/exec'
+                                const form = document.forms['google-sheet']
+                              
+                                form.addEventListener('submit', e => {
+                                  e.preventDefault()
+                                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                    .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                    .catch(error => console.error('Error!', error.message))
+                                })
+                    </script>     
             </div>
             <script src="join.js"></script>
             <div class="join-details">
@@ -216,7 +197,7 @@
                         <li>Disha</li>
                     </ol>
                     <br>
-                    <p>শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ডিবেটিং সোসাইটি প্রতি বছর নতুন সদস্য সংগ্রহ করে থাকে। নতুন সদস্য হবার জন্য শিক্ষার্থীদের সদস্য সংগ্রহ বুথ থেকে একটি ফর্ম কিনতে হয়ে থাকে। ফর্মের শুভেচ্ছা মূল্য ১০০ টাকা। অতঃপর তা পূরণ করে দায়িত্ব প্রাপ্ত ব্যাক্তির কাছে জমা প্রদান করতে হয়। <br> <br>পরবর্তিতে শেকৃবি ডিবেটিং সোসাইটি থেকে সদস্য হতে ইচ্ছুক সকল শিক্ষার্থীদের মৌখিক অভিক্ষার জন্য একটি তারিখ দেয়া হয়। মৌখিক অভিক্ষার পর নতুন সদস্য পদ প্রাপ্ত শিক্ষার্থীদের নাম প্রকাশ করা হইয়ে থাকে। <br><br>শেকৃবি ডিবেটিং সোসাইটি সম্পর্কে আপনার কোনো প্রশ্ন থাকলে সরাসরি যোগাযোগ করতে নিচের লিংক এ প্রবেশ করুন ।</p>
+                    <p style="font-family: tiro bangla; font-size: 20px;">শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ডিবেটিং সোসাইটি প্রতি বছর নতুন সদস্য সংগ্রহ করে থাকে। নতুন সদস্য হবার জন্য শিক্ষার্থীদের সদস্য সংগ্রহ বুথ থেকে একটি ফর্ম কিনতে হয়ে থাকে। ফর্মের শুভেচ্ছা মূল্য ১০০ টাকা। অতঃপর তা পূরণ করে দায়িত্ব প্রাপ্ত ব্যাক্তির কাছে জমা প্রদান করতে হয়। <br> <br>পরবর্তিতে শেকৃবি ডিবেটিং সোসাইটি থেকে সদস্য হতে ইচ্ছুক সকল শিক্ষার্থীদের মৌখিক অভিক্ষার জন্য একটি তারিখ দেয়া হয়। মৌখিক অভিক্ষার পর নতুন সদস্য পদ প্রাপ্ত শিক্ষার্থীদের নাম প্রকাশ করা হইয়ে থাকে। <br><br>শেকৃবি ডিবেটিং সোসাইটি সম্পর্কে আপনার কোনো প্রশ্ন থাকলে সরাসরি যোগাযোগ করতে নিচের লিংক এ প্রবেশ করুন ।</p>
                 </div>
                 <div class="join-details-link"><a id="link" href="contact.html"  target="_self">Contact</a></div>
             </div>
@@ -226,7 +207,7 @@
                 
             </div>
             <div class="join-learn-more">
-                <div class="join-learn-more-bold"><H2>শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ডিবেটিং সোসাইটি সম্পর্কে বিস্তারিত জানতে নিচে প্রদত্ত লিংক এ ক্লিক করুন । </H2></div>
+                <div class="join-learn-more-bold"><H2 style="font-family: tiro bangla;">শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ডিবেটিং সোসাইটি সম্পর্কে বিস্তারিত জানতে নিচে প্রদত্ত লিংক এ ক্লিক করুন । </H2></div>
                 <div class="join-learn-more-link"><a id="link" href="about.html"  target="_self">Learn More About SAUDS</a></div>
                 
             </div>
