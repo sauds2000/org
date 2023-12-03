@@ -865,7 +865,7 @@ border-bottom-right-radius: 12px;
     height: auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    text-align: center;
+    text-align: justify;
     font-family: tiro bangla;
     font-size: 22px;
 }
@@ -891,6 +891,11 @@ border-bottom-right-radius: 12px;
     }
     .aboutmidbar{
         width: 92%;
+    }
+    .aboutmidbar-details-head{
+
+        font-size: 35px;
+
     }
     .aboutmidbar-details-text{
         margin-top: 8%;
