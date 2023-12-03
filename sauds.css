@@ -858,17 +858,14 @@ border-bottom-right-radius: 12px;
     margin-top: 2%;
     margin-bottom: 2%;
     border: 2px solid #fff;
-    box-shadow: 10px 10px 5px #ccc;
-    -moz-box-shadow: 10px 10px 5px #ccc;
-    -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;
+   
 }
 .aboutmidbar-details-text{
     width: 100%;
     height: auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    text-align: justify;
+    text-align: center;
     font-family: tiro bangla;
     font-size: 22px;
 }
@@ -993,12 +990,12 @@ border-bottom-right-radius: 12px;
     }
 .blank-normal p{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 20px;
     text-align: justify;
     }
-.blank-bold h3{
+.blank-bold p{
         font-family: 'Times New Roman', Times, serif;
-        font-size: 30px;
+        font-size: 25px;
         text-align: justify;
         }
     
