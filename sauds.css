@@ -140,14 +140,16 @@ li :hover{
 }
 .cover h1 {
     position: relative;
-    color: #ffffff;  
+     
     text-align: center;
     padding: 5px 5px 5px 5px;
     font-weight: 600;
     font-size: 75px;
-    text-shadow: 4px 4px 0px #000, 
-        -4px 0 0px #000,
-        7px 4px 0 #fff;
+    color: rgb(255, 255, 255);
+
+    text-shadow: 0 2px 1px black, 
+          -1px 3px 1px black, 
+          -2px 5px 1px black;
     font-style: inherit;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
