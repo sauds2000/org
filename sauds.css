@@ -645,18 +645,18 @@ border-bottom-right-radius: 12px;
         grid-template-columns: repeat(1, 0fr);
     }
     .card--1{
-        width: 100%;
-        margin-left: 0px;
+        width: 90%;
+        margin-left: 2px;
         margin-right: 0%;
     }
     .card--2{
-        width: 100%;
-        margin-left: 0px;
+        width: 90%;
+        margin-left: 2px;
         margin-right: 0%;
     }
     .card--3{
-        width: 100%;
-        margin-left: 0px;
+        width: 90%;
+        margin-left: 2px;
         margin-right: 0%;
     }
 
