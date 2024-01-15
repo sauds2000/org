@@ -385,6 +385,22 @@ border-bottom-right-radius: 12px;
     text-align: center;
     font-size: larger;
 }
+.counter{
+    height: 5%;
+    width:70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(5,4fr);
+    align-content: center;
+}
+ #counter-text{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-stretch: expanded;
+    color: #fa3605;
+ }
 
 
 .details{
