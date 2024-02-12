@@ -1518,3 +1518,28 @@ text-align: center;
   }
  }
 /* copy rights page css*/
+/* info page css*/
+ #info{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+ }
+ .motion{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+
+ @media only screen and (max-width: 480px){
+    #info{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        
+    }
+    .book h1{
+        font-size: medium;
+        width: 100%;
+    }
+    .motion h1{
+        font-size: medium;
+        width: 100%;
+    }
+ }
